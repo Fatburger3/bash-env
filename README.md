@@ -1,3 +1,1 @@
-# bash_aliases
-My bash aliases
-chocked full of goodies.
+# This is all my bash stuff.
