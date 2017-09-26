@@ -35,15 +35,24 @@ if [ -z "${debian_chroot:-}" ] && [ -r /etc/debian_chroot ]; then
     debian_chroot=$(cat /etc/debian_chroot)
 fi
 
-PS1='${debian_chroot:+($debian_chroot)}\[\033[01;35m\]\u\[\033[01;32m\]@\[\033[00m\]\[\033[01;34m\]\h\[\033[00m\]\[\033[01;36m\]:\[\033[01;33m\]\w\[\033[00m\]\[\033[01;31m\]Ʃ\[\033[00m\] '
-# If this is an xterm set the title to user@host:dir
-case "$TERM" in
-xterm*|rxvt*)
-    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
-    ;;
-*)
-    ;;
-esac
+PURPLE="\[\033[01;35m\]"
+GREEN="\[\033[01;32m\]"
+BLUE="\[\033[01;34m\]"
+RED="\[\033[01;31m\]"
+CYAN="\[\033[01;36m\]"
+YELLOW="\[\033[01;33m\]"
+GRAY="\[\033[1;30m\]"
+LIGHT_GRAY="\[\033[0;37m\]"
+CYAN="\[\033[0;36m\]"
+LIGHT_CYAN="\[\033[1;36m\]"
+CLR="\[\033[0m\]"
+
+PS1="${BLUE}\u${CLR}"
+PS1+="${RED}@${CLR}"
+PS1+="${CYAN}\h${CLR}"
+PS1+="${LIGHT_CYAN}:${CLR}"
+PS1+="${YELLOW}\w${CLR}"
+PS1+="${PURPLE}\$${CLR} "
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
