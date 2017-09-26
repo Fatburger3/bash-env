@@ -25,6 +25,18 @@ btw-checkout()
 	git push -u origin $1;
 }
 
+github-clone()
+{
+	if [[ -z $2 ]]; then
+		USER=Fatburger3
+		REPO=$1
+	else
+		USER=$1
+		REPO=$2
+	fi
+	git clone "git@github.com:$USER/$REPO"
+}
+
 alias dtk-server="cd ~/Documents/discotek-server/;git pull ryan server;SQLALCHEMY_DATABASE_URI='postgresql://jcrzr:anchor99@localhost/postgres';PORT='8080';python3 fill_db.py;python3 serv.py"
 alias backup-main="sudo rsync -vrWHAXog --exclude={'/backup','/home/carsen/Videos','/dev/*','/proc/*','/sys/*','/tmp/*','/run/*','/mnt/*','/media/*','/lost+found'} --delete / /backup"
 alias dir-sync="rsync -xvrWHAXog"
