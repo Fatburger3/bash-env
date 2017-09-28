@@ -52,7 +52,7 @@ PS1+="${RED}@${CLR}"
 PS1+="${PURPLE}\h${CLR}"
 PS1+="${CYAN}:${CLR}"
 PS1+="${YELLOW}\w${CLR}"
-PS1+="${CYAN}⮞${CLR} "
+PS1+="${CYAN}⮞ ${CLR}"
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
