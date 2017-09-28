@@ -49,10 +49,10 @@ CLR="\[\033[0m\]"
 
 PS1="${BLUE}\u${CLR}"
 PS1+="${RED}@${CLR}"
-PS1+="${CYAN}\h${CLR}"
-PS1+="${LIGHT_CYAN}:${CLR}"
+PS1+="${PURPLE}\h${CLR}"
+PS1+="${CYAN}:${CLR}"
 PS1+="${YELLOW}\w${CLR}"
-PS1+="${PURPLE}\$${CLR} "
+PS1+="${CYAN}⮞${CLR} "
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
