@@ -80,4 +80,5 @@ alias mount-media-backup='sudo mount /dev/md127p1 /medialibrary/.backup'
 alias py3='python3.6' 
 alias conda-mode='PATH=/home/carsen/.anaconda3/bin/:/home/carsen/bin:/home/carsen/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/carsen/.bin'
 alias push='git add .; git commit; git push'
-alias cst205="source ~/Documents/cst205env/bin/activate"
+alias pull='git pull'
+alias cst205="source ~/Documents/cst205env/bin/activate
