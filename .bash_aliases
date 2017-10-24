@@ -83,3 +83,4 @@ alias push='git add .; git commit; git push'
 alias pull='git pull'
 alias cst205="source ~/Documents/cst205env/bin/activate"
 alias u='sudo apt update;sudo apt upgrade'
+alias fix-frame-tearing='nvidia-settings --assign CurrentMetaMode="nvidia-auto-select +0+0 { ForceFullCompositionPipeline = On }"'
