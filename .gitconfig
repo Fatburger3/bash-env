@@ -1,3 +1,5 @@
 [user]
 	email = fatburgeriii@gmail.com
 	name = Carsen Yates
+[push]
+	default = simple
