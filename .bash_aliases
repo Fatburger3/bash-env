@@ -77,8 +77,13 @@ install-ppa()
 }
 alias copy-ssh-key='xclip -sel clip < ~/.ssh/id_rsa.pub'
 alias mount-media-backup='sudo mount /dev/md127p1 /medialibrary/.backup'
-alias py3='python3.6' 
-alias conda-mode='PATH=/home/carsen/.anaconda3/bin/:/home/carsen/bin:/home/carsen/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/carsen/.bin'
+alias py3='python3.6'
 alias push='git add .; git commit; git push'
 alias pull='git pull'
 alias cst205="source ~/Documents/cst205env/bin/activate"
+ml-env()
+{
+	PATH=/home/carsen/.anaconda3/bin/:$PATH &&
+	source activate ass &&
+	cd /home/carsen/Documents/ML_setup_assistant;
+}
