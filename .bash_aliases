@@ -87,3 +87,5 @@ ml-env()
 	source activate ass &&
 	cd /home/carsen/Documents/ML_setup_assistant;
 }
+alias u='sudo apt update;sudo apt upgrade'
+alias fix-frame-tearing='nvidia-settings --assign CurrentMetaMode="nvidia-auto-select +0+0 { ForceFullCompositionPipeline = On }"'
