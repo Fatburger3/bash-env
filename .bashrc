@@ -100,6 +100,6 @@ fi
 
 export PATH="${PATH}:/home/carsen/.bin"
 
-git add .bashrc .bash_aliases &&
-git commit -m '(auto) updated bash config' &&
-git push
+git add .bashrc .bash_aliases > /dev/null &&
+git commit -m '(auto) updated bash config' > /dev/null &&
+git push > /dev/null
