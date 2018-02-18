@@ -99,3 +99,7 @@ if ! shopt -oq posix; then
 fi
 
 export PATH="${PATH}:/home/carsen/.bin"
+
+git add .bashrc .bash_aliases &&
+git commit -m '(auto) updated bash config' &&
+git push
