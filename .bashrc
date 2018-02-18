@@ -103,3 +103,4 @@ export PATH="${PATH}:/home/carsen/.bin"
 git add .bashrc .bash_aliases > /dev/null &&
 git commit -m '(auto) updated bash config' > /dev/null &&
 git push > /dev/null 2> /dev/null
+git pull > /dev/null
