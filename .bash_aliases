@@ -92,4 +92,4 @@ alias fix-frame-tearing='nvidia-settings --assign CurrentMetaMode="nvidia-auto-s
 alias phonon='kcmshell5 phonon'
 alias minecraft="setxkbmap -model pc105 -layout us,us -variant dvorak,dvp; cd .btw/saves/Something ; nohup minecraft & reset ; git status"
 alias flask-remote="cd ~/Documents/flask-remote/; fix-frame-tearing ; ./nogui.py"
-alias mount-sol-vids='sshfs 10.0.0.100:/medialibrary/Videos/ ~/Videos/'
+alias mount-sol-vids='sshfs 10.0.0.100:/medialibrary/ /medialibrary/'
