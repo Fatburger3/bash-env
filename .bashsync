@@ -1,0 +1,8 @@
+#!/bin/bash
+cd
+git add .bashrc .bash_aliases .bashsync > /dev/null &&
+git commit -m '(auto) updated bash config' > /dev/null &&
+git push > /dev/null 2> /dev/null
+git pull > /dev/null
+
+
