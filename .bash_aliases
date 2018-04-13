@@ -91,6 +91,7 @@ alias u='sudo apt update;sudo apt upgrade'
 alias fix-frame-tearing='nvidia-settings --assign CurrentMetaMode="nvidia-auto-select +0+0 { ForceFullCompositionPipeline = On }"'
 alias phonon='kcmshell5 phonon'
 alias minecraft="setxkbmap -model pc105 -layout us,us -variant dvorak,dvp; cd .btw/saves/Something ; nohup minecraft & reset ; git status"
-alias flask-remote="cd ~/Documents/flask-remote/; fix-frame-tearing ; ./nogui.py"
 alias lsl="ls -l"
+alias flask-remote="~/Documents/flask-remote/start.sh"
 alias server-mode="service sddm stop && flask-remote"
+alias mount-sol-vids='sshfs 10.0.0.100:/medialibrary/ /medialibrary/'
