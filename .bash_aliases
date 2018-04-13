@@ -93,5 +93,5 @@ alias phonon='kcmshell5 phonon'
 alias minecraft="setxkbmap -model pc105 -layout us,us -variant dvorak,dvp; cd .btw/saves/Something ; nohup minecraft & reset ; git status"
 alias lsl="ls -l"
 alias flask-remote="~/Documents/flask-remote/start.sh"
-alias server-mode="service sddm stop && flask-remote"
+alias server-mode="sudo service sddm stop && flask-remote"
 alias mount-sol-vids='sshfs 10.0.0.100:/medialibrary/ /medialibrary/'
