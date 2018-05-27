@@ -1,30 +1,14 @@
 btw-server()
 {
-	cd ~/.btw/server/btw-deco-world;
-	git pull;
-	git branch -v;
-	cd ..;
-	java -Xmx8G -Xms512M -jar minecraft_server.jar nogui;
-	cd btw-deco-world;
-	git add .;
-	git commit -m 'Carsen ran the server';
-	git push;
-	git branch -v;
+	cd ~/.btw/server/ &&
+	java -Xmx8G -Xms512M -jar minecraft_server.jar nogui
 }
 btw-client()
 {
-	cd /home/carsen/.minecraft;
-	nohup java -Xmx8G -Xms512M -jar launcher.jar&reset;
+	setxkbmap -model pc105 -layout us,us -variant dvorak,dvp &&
+	cd /home/carsen/.minecraft &&
+	nohup java -Xmx8G -Xms512M -jar launcher.jar & reset
 }
-btw-checkout()
-{
-	cd ~/.btw/server/btw-deco-world;
-	git checkout $1
-	git branch --set-upstream-to=origin/$1 $1;
-	git pull origin $1;
-	git push -u origin $1;
-}
-
 github-clone()
 {
 	if [[ -z $2 ]]; then
@@ -81,12 +65,6 @@ alias py3='python3.6'
 alias push='git add .; git commit; git push'
 alias pull='git pull'
 alias cst205="source ~/Documents/cst205env/bin/activate"
-ml-env()
-{
-	PATH=/home/carsen/.anaconda3/bin/:$PATH &&
-	source activate ass &&
-	cd /home/carsen/Documents/ML_setup_assistant;
-}
 alias u='sudo apt update;sudo apt upgrade'
 alias fix-frame-tearing='nvidia-settings --assign CurrentMetaMode="nvidia-auto-select +0+0 { ForceFullCompositionPipeline = On }"'
 alias phonon='kcmshell5 phonon'
