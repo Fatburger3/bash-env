@@ -75,3 +75,4 @@ alias server-mode="sudo service sddm stop && flask-remote"
 alias mount-sol-vids='sshfs 10.0.0.100:/medialibrary/ /medialibrary/'
 alias dvorak='setxkbmap -model pc105 -layout us -variant dvorak'
 alias dvp='setxkbmap -model pc105 -layout us -variant dvp'
+alias helios='ssh 10.0.0.100'
