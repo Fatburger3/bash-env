@@ -21,11 +21,8 @@ github-clone()
 	git clone "git@github.com:$USER/$REPO"
 }
 
-alias dtk-server="cd ~/Documents/discotek-server/;git pull ryan server;SQLALCHEMY_DATABASE_URI='postgresql://jcrzr:anchor99@localhost/postgres';PORT='8080';python3 fill_db.py;python3 serv.py"
-alias backup-main="sudo rsync -vrWHAXog --exclude={'/backup','/home/carsen/Videos','/dev/*','/proc/*','/sys/*','/tmp/*','/run/*','/mnt/*','/media/*','/lost+found'} --delete / /backup"
+#alias backup-main="sudo rsync -vrWHAXog --exclude={'/backup','/home/carsen/Videos','/dev/*','/proc/*','/sys/*','/tmp/*','/run/*','/mnt/*','/media/*','/lost+found'} --delete / /backup"
 alias dir-sync="rsync -xvrWHAXog"
-alias backup-tv="sudo rsync -xvrWHAXog /medialibrary/TV/ /medialibrary/.backup/TV/"
-alias backup-movies="sudo rsync -xvrWHAXog /medialibrary/Movies/ /medialibrary/.backup/Movies/"
 alias install="sudo apt-get install -y"
 alias install-apk="/opt/shashlik/bin/shashlik-install"
 alias apk="/opt/shashlik/bin/shashlik-run"
@@ -60,8 +57,6 @@ install-ppa()
 	sudo apt install $2;
 }
 alias copy-ssh-key='xclip -sel clip < ~/.ssh/id_rsa.pub'
-alias mount-media-backup='sudo mount /dev/md127p1 /medialibrary/.backup'
-alias py3='python3.6'
 alias push='git add .; git commit; git push'
 alias pull='git pull'
 alias cst205="source ~/Documents/cst205env/bin/activate"
