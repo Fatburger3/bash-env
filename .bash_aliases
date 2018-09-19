@@ -1,3 +1,5 @@
+source ~/.scripts/vpn-connect.source
+
 btw-server()
 {
 	cd ~/.btw/server/ &&
