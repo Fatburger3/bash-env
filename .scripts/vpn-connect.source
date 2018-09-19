@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+function vpn-connect() {
+	cd ~/Documents/vpn/ &&
+	nohup sudo openvpn $1 &
+}
+_vpn-connect () {
+    IFS=$'\n' tmp=( $(compgen -W "$(ls "/home/carsen/Documents/vpn")" -- "${COMP_WORDS[$COMP_CWORD]}" ))
+    COMPREPLY=( "${tmp[@]// /\ }" )
+}
+complete -o default -F _vpn-connect vpn-connect
