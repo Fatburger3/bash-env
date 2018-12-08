@@ -5,20 +5,15 @@ btw-server()
 	cd ~/.btw/server/ &&
 	java -Xmx8G -Xms512M -jar minecraft_server.jar nogui
 }
-btw-client()
-{
-	setxkbmap -model pc105 -layout us,us -variant dvorak,dvp &&
-	cd /home/carsen/.minecraft &&
-	nohup java -Xmx8G -Xms512M -jar launcher.jar & reset
-}
 set-gaming-keyboard-mode()
 {
 	setxkbmap -model pc105 -layout us,us -variant ,dvp
 }
-minecraft()
+btw-client()
 {
-	set-gaming-keyboard-mode() &&
-	nohup minecraft &
+	setxkbmap -model pc105 -layout us,us -variant ,dvp 
+	cd /home/carsen/.minecraft &&
+	nohup java -Xmx8G -Xms512M -jar launcher.jar & reset
 }
 github-clone()
 {
