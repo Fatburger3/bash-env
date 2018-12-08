@@ -13,7 +13,7 @@ btw-client()
 }
 set-gaming-keyboard-mode()
 {
-	setxkbmap -model pc105 -layout us,us -variant dvorak,dvp
+	setxkbmap -model pc105 -layout us,us -variant ,dvp
 }
 github-clone()
 {
