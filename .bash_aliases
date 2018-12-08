@@ -11,6 +11,10 @@ btw-client()
 	cd /home/carsen/.minecraft &&
 	nohup java -Xmx8G -Xms512M -jar launcher.jar & reset
 }
+set-gaming-keyboard-mode()
+{
+	setxkbmap -model pc105 -layout us,us -variant dvorak,dvp
+}
 github-clone()
 {
 	if [[ -z $2 ]]; then
