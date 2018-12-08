@@ -3,7 +3,7 @@ source ~/.scripts/vpn-connect.source
 btw-server()
 {
 	cd ~/.btw/server/ &&
-	java -Xmx8G -Xms512M -jar minecraft_server.jar nogui
+	/usr/lib/jvm/java-8-openjdk-amd64/bin/java -Xmx8G -Xms512M -jar minecraft_server.jar nogui
 }
 set-gaming-keyboard-mode()
 {
