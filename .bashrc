@@ -100,3 +100,4 @@ fi
 
 export PATH="${PATH}:/home/carsen/.bin"
 ~/.bashsync
+alias get-ip="wget http://ipinfo.io/ip -qO -"
