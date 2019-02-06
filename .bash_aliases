@@ -73,6 +73,7 @@ alias lsl="ls -l"
 alias flask-remote="~/Documents/flask-remote/start.sh"
 alias server-mode="sudo service sddm stop && flask-remote"
 alias mount-medialibrary='sshfs 10.0.0.100:/medialibrary/ /medialibrary/'
+alias mount-downloads='sshfs 10.0.0.100:~/Downloads/ ~/Downloads/'
 alias dvorak='setxkbmap -model pc105 -layout us -variant dvorak'
 alias dvp='setxkbmap -model pc105 -layout us -variant dvp'
 alias helios='ssh 10.0.0.100'
